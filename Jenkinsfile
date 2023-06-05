@@ -1,6 +1,7 @@
 pipeline {
-    agent any
-
+    agent {
+        label ('Slave-1')
+    }
     stages {
         stage ('Compile Stage') {
 
